@@ -1,0 +1,20 @@
+name: ProtectionsExtended
+main: info.joeboyle.ProtectionsExtended.ProtectionsExtended
+version: 0.5.0
+description: Enhances grief-protection plugins by disabling the use of specific tools in protected regions. Also fixes many bugs, dupes, and other annoyances.
+author: Joe Boyle
+website: http://www.joeboyle.info
+
+permissions:
+  pe.gravity.allow:
+    description: Allows player to have a gravity gun.
+    default: op
+  pe.watchdebug:
+    description: Allows player to use the watchdebug command
+    default: op
+    
+commands:
+   watchdebug:
+      description: Watch PE output for players who infringe on protections.
+      permission: pe.wacthdebug
+      permission-message: You don't have permission
